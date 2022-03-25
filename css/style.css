@@ -1,0 +1,409 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500;600;700&family=Roboto:wght@400;700&display=swap");
+
+/* Reset CSS */
+* {
+  box-sizing: border-box;
+}
+body,
+h1,
+a,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+/* Fim do Reset CSS */
+
+/* Header */
+.header-container {
+  /* background: #fafafa; */
+  padding: 20px calc((100% - 1160px) / 2);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #cca1aa;
+}
+
+.logo {
+  padding: 0 20px 10px 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 530px) {
+  .logo {
+    margin: 0 auto;
+  }
+}
+
+.menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.menu li {
+  padding: 0 20px;
+}
+
+.menu li a {
+  font-family: "IBM Plex Serif", serif;
+  font-size: 1.12em;
+  font-weight: 700;
+  color: #515151;
+  position: relative;
+}
+
+.menu li a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 24px;
+  background-color: #cca1aa;
+  bottom: 0;
+  left: 0;
+}
+
+@media (max-width: 530px) {
+  .menu {
+    margin: 0 auto;
+  }
+}
+/* Fim do Header */
+
+/* Main */
+.main {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-info {
+  flex: 2 1 380px;
+  margin: 60px 0;
+  padding-right: 40px;
+}
+
+.main-info h1 {
+  font-family: "IBM Plex Serif", serif;
+  font-size: 4em;
+  font-weight: 600;
+  line-height: 1.1;
+  color: #220606;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.main-info h1::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  z-index: -1;
+  top: 4px;
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  background: linear-gradient(135deg, #511e29 0%, #cca1aa 100%);
+}
+
+.main-info p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5em;
+  line-height: 1.2;
+  color: #3e3e3e;
+  margin-bottom: 10px;
+}
+
+.main-info button {
+  background: linear-gradient(180deg, #e7d0d5 0%, #cca1aa 100%);
+  border: 1px solid #511e29;
+  border-radius: 4px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+  color: #220606;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.12em;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+@media (max-width: 530px) {
+  .main-info {
+    margin: 40px auto;
+  }
+  .main-info h1 {
+    font-size: 2em;
+  }
+  .main-info h1::before {
+    width: 16px;
+    height: 16px;
+  }
+  .main-info p {
+    font-size: 1em;
+  }
+  .main-info button {
+    font-size: 1em;
+    padding: 4px 8px;
+  }
+}
+
+.main-img {
+  flex: 1 1 460px;
+}
+@media (max-width: 530px) {
+  .main-img {
+    display: none;
+  }
+}
+/* Fim do Main */
+
+/* Procedimentos */
+.procedimentos {
+  background-color: #fafafa;
+  padding: 0 calc((100% - 1160px) / 2);
+  margin: 120px 0 80px 0;
+}
+@media (max-width: 530px) {
+  .procedimentos {
+    margin: 40px 0;
+  }
+}
+
+.procedimentos h1 {
+  font-family: "IBM Plex Serif", serif;
+  font-size: 2.25em;
+  font-weight: 600;
+  color: #220606;
+  text-align: center;
+  padding: 60px 0;
+  position: relative;
+}
+.procedimentos h1::before {
+  content: "";
+  display: inline-block;
+  height: 4px;
+  width: 60px;
+  position: absolute;
+  bottom: 60px;
+  background: #cca1aa;
+}
+
+.procedimentos-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* padding: 0 20px; */
+}
+
+.procedimentos-item {
+  flex: 1 1 260px;
+  padding: 0 20px;
+}
+
+.procedimentos-item img {
+  border-radius: 4px;
+}
+
+.procedimentos-info {
+  padding-bottom: 60px;
+}
+
+.procedimentos-info h2 {
+  font-family: "IBM Plex Serif", serif;
+  font-size: 1.5em;
+  color: #2f2f2f;
+}
+.procedimentos-info h2::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 30px;
+  background: #cca1aa;
+}
+
+.procedimentos-info p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25em;
+  color: #2f2f2f;
+  margin-top: -8px;
+}
+.procedimentos-btn {
+  text-align: center;
+  padding-bottom: 60px;
+}
+.procedimentos-btn a {
+  background: linear-gradient(180deg, #e7d0d5 0%, #cca1aa 100%);
+  border: 1px solid #511e29;
+  border-radius: 4px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+  color: #220606;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.12em;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+/* Fim dos Proceimentos */
+
+/* Planos */
+.planos {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.planos h1 {
+  text-align: center;
+  font-family: "IBM Plex Serif", serif;
+  font-size: 2.25em;
+  font-weight: 600;
+  color: #220606;
+  text-align: center;
+  padding: 60px 0;
+  position: relative;
+}
+.planos h1::before {
+  content: "";
+  display: inline-block;
+  height: 4px;
+  width: 60px;
+  position: absolute;
+  bottom: 60px;
+  background: #cca1aa;
+}
+
+.planos-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-bottom: 60px;
+}
+
+.planos-item {
+  background: #ededed;
+  border: 1px solid #cca1aa;
+  border-radius: 4px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+  max-width: 360px;
+  padding-bottom: 24px;
+  margin: 0 6px 20px 6px;
+}
+@media (max-width: 530px) {
+  .planos-item {
+    margin: 10px auto;
+  }
+}
+.planos-item:nth-child(2) {
+  background: #d0d0d0;
+}
+.planos-item-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 12px 40px 12px;
+}
+.planos-item-header h2 {
+  font-family: "IBM Plex Serif", serif;
+  font-size: 2em;
+  font-weight: 500;
+  color: #220606;
+  position: relative;
+}
+.planos-item-header h2::before {
+  content: "";
+  display: inline-block;
+  height: 2px;
+  width: 40px;
+  position: absolute;
+  bottom: 0;
+  background: #cca1aa;
+}
+
+.planos-item-header span {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5em;
+  font-weight: 400;
+  color: #2f2f2f;
+}
+
+.planos-item-info ul {
+  padding: 0px 0px 100px 60px;
+}
+.planos-item-info li {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
+  color: #3e3e3e;
+  position: relative;
+}
+.planos-item-info li::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #b17f8a;
+  position: absolute;
+  bottom: 8px;
+  left: -16px;
+}
+
+.planos-item-info p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
+  color: #1a1a1a;
+  padding: 0 0 24px 12px;
+}
+/* Fim dos Planos */
+
+/* Footer */
+.footer {
+  background: #fafafa;
+  margin-top: 40px;
+  padding: 40px calc((100% - 1160px) / 2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-img {
+  padding: 0 20px;
+}
+
+.footer-contato {
+  padding: 0 20px;
+}
+.footer-contato h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  color: #220606;
+}
+.footer-contato p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #2f2f2f;
+}
+.footer-contato-img {
+  display: flex;
+}
+@media (max-width: 530px) {
+  .footer {
+    flex-direction: column;
+  }
+}
