@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500;600;700&family=Roboto:wght@400;700&display=swap");
+
+/* Reset CSS */
+* {
+  box-sizing: border-box;
+}
+body,
+h1,
+a,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}

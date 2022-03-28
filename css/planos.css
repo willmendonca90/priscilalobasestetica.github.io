@@ -1,0 +1,109 @@
+.planos {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.planos h1 {
+  text-align: center;
+  font-family: "IBM Plex Serif", serif;
+  font-size: 2.25em;
+  font-weight: 600;
+  color: #220606;
+  text-align: center;
+  padding: 60px 0;
+  position: relative;
+}
+.planos h1::before {
+  content: "";
+  display: inline-block;
+  height: 4px;
+  width: 60px;
+  position: absolute;
+  bottom: 60px;
+  background: #cca1aa;
+}
+
+.planos-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-bottom: 60px;
+}
+
+.planos-item {
+  background: #ededed;
+  border: 1px solid #cca1aa;
+  border-radius: 4px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+  max-width: 360px;
+  padding-bottom: 24px;
+  margin: 0 6px 20px 6px;
+}
+@media (max-width: 530px) {
+  .planos-item {
+    margin: 10px auto;
+  }
+}
+.planos-item:nth-child(2) {
+  background: #d0d0d0;
+}
+.planos-item-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 12px 40px 12px;
+}
+.planos-item-header h2 {
+  font-family: "IBM Plex Serif", serif;
+  font-size: 2em;
+  font-weight: 500;
+  color: #220606;
+  position: relative;
+}
+.planos-item-header h2::before {
+  content: "";
+  display: inline-block;
+  height: 2px;
+  width: 40px;
+  position: absolute;
+  bottom: 0;
+  background: #cca1aa;
+}
+
+.planos-item-header span {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5em;
+  font-weight: 400;
+  color: #2f2f2f;
+}
+
+.planos-item-info ul {
+  padding: 0px 0px 100px 60px;
+}
+.planos-item-info li {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
+  color: #3e3e3e;
+  position: relative;
+}
+.planos-item-info li::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #b17f8a;
+  position: absolute;
+  bottom: 8px;
+  left: -16px;
+}
+
+.planos-item-info p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
+  color: #1a1a1a;
+  padding: 0 0 24px 12px;
+}

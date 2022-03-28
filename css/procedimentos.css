@@ -1,0 +1,84 @@
+.procedimentos {
+  background-color: #fafafa;
+  padding: 0 calc((100% - 1160px) / 2);
+  margin: 120px 0 80px 0;
+}
+@media (max-width: 530px) {
+  .procedimentos {
+    margin: 40px 0;
+  }
+}
+
+.procedimentos h1 {
+  font-family: "IBM Plex Serif", serif;
+  font-size: 2.25em;
+  font-weight: 600;
+  color: #220606;
+  text-align: center;
+  padding: 60px 0;
+  position: relative;
+}
+.procedimentos h1::before {
+  content: "";
+  display: inline-block;
+  height: 4px;
+  width: 60px;
+  position: absolute;
+  bottom: 60px;
+  background: #cca1aa;
+}
+
+.procedimentos-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* padding: 0 20px; */
+}
+
+.procedimentos-item {
+  flex: 1 1 260px;
+  padding: 0 20px;
+}
+
+.procedimentos-item img {
+  border-radius: 4px;
+}
+
+.procedimentos-info {
+  padding-bottom: 60px;
+}
+
+.procedimentos-info h2 {
+  font-family: "IBM Plex Serif", serif;
+  font-size: 1.5em;
+  color: #2f2f2f;
+}
+.procedimentos-info h2::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 30px;
+  background: #cca1aa;
+}
+
+.procedimentos-info p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25em;
+  color: #2f2f2f;
+  margin-top: -8px;
+}
+.procedimentos-btn {
+  text-align: center;
+  padding-bottom: 60px;
+}
+.procedimentos-btn a {
+  background: linear-gradient(180deg, #e7d0d5 0%, #cca1aa 100%);
+  border: 1px solid #511e29;
+  border-radius: 4px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+  color: #220606;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.12em;
+  padding: 8px 16px;
+  cursor: pointer;
+}

@@ -1,0 +1,35 @@
+.footer {
+  background: #fafafa;
+  margin-top: 40px;
+  padding: 40px calc((100% - 1160px) / 2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-img {
+  padding: 0 20px;
+}
+
+.footer-contato {
+  padding: 0 20px;
+}
+.footer-contato h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  color: #220606;
+}
+.footer-contato p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #2f2f2f;
+}
+.footer-contato-img {
+  display: flex;
+}
+@media (max-width: 530px) {
+  .footer {
+    flex-direction: column;
+  }
+}

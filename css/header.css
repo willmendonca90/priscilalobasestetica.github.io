@@ -1,0 +1,50 @@
+.header-container {
+  padding: 20px calc((100% - 1160px) / 2);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #cca1aa;
+}
+
+.logo {
+  padding: 0 20px 10px 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 530px) {
+  .logo {
+    margin: 0 auto;
+  }
+  .menu {
+    margin: 0 auto;
+  }
+}
+
+.menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.menu li {
+  padding: 0 20px;
+}
+
+.menu li a {
+  font-family: "IBM Plex Serif", serif;
+  font-size: 1.12em;
+  font-weight: 700;
+  color: #515151;
+  position: relative;
+}
+
+.menu li a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 24px;
+  background-color: #cca1aa;
+  bottom: 0;
+  left: 0;
+}
